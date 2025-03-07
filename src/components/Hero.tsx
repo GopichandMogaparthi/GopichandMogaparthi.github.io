@@ -18,9 +18,19 @@ const Hero = () => {
           <span className="chip bg-blue-100 text-portfolio-blue mb-6">Java Full Stack Developer</span>
         </div>
         
-        <h1 className="text-4xl md:text-6xl font-bold mb-6 opacity-0 animate-fade-in delay-100">
-          Gopichand Mogaparthi
-        </h1>
+        <div className="relative mb-6">
+          {/* Background image behind name */}
+          <div className="absolute inset-0 -z-10 opacity-10 blur-sm">
+            <img 
+              src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6" 
+              alt="Code background" 
+              className="w-full h-full object-cover rounded-lg"
+            />
+          </div>
+          <h1 className="text-4xl md:text-6xl font-bold opacity-0 animate-fade-in delay-100 px-4 py-2">
+            Gopichand Mogaparthi
+          </h1>
+        </div>
         
         <p className="text-xl text-portfolio-slate max-w-2xl mb-10 opacity-0 animate-fade-in delay-200">
           I build robust, scalable and elegant solutions using Java and modern web technologies. 
