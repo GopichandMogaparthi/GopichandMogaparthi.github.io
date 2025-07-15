@@ -1,7 +1,7 @@
 
 import { ArrowDown } from "lucide-react";
 
-import profileImage from "/Users/gopichandmogaparthi/Desktop/gopichand-portfolio/gopichandmogaparthi-portfolio/src/Gopichand.jpeg";
+import profileImage from "/Users/gopichandmogaparthi/Desktop/gopichand-portfolio/gopichandmogaparthi-portfolio/src/Chowdary.jpeg";
 
 const Hero = () => {
   return (
