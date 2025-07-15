@@ -1,7 +1,9 @@
+// App.js
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom'; // 🔁 HashRouter
 import './App.css';
 import './index.css';
+
 
 import Index from './pages/Index';
 import NotFound from './pages/NotFound';

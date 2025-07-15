@@ -6,6 +6,7 @@ import Skills from "../components/sections/Skills";
 import Projects from "../components/sections/Projects";
 import Contact from "../components/sections/Contact";
 
+
 const Index = () => {
   return (
     <div className="min-h-screen flex flex-col bg-gradient-to-b from-white to-blue-50">
