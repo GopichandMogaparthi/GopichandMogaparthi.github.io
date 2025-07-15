@@ -228,3 +228,6 @@ body {
   padding: 0;
   text-align: initial;
 }
+html {
+  scroll-behavior: smooth;
+}
