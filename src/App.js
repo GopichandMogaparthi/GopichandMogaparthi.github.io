@@ -1,6 +1,6 @@
 // App.js
 import React from 'react';
-import { HashRouter as Router, Routes, Route } from 'react-router-dom'; // 🔁 HashRouter
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; // 🔁 HashRouter
 import './App.css';
 import './index.css';
 
