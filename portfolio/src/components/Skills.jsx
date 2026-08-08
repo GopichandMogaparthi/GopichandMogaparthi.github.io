@@ -4,28 +4,36 @@ import { api } from "../services/api";
 // Fallback static data (shown if API is down)
 const FALLBACK_CATEGORIES = [
   {
-    name: "Backend Development",
-    skills: ["Java", "Spring Boot", "REST APIs", "gRPC", "Microservices", "WebSockets", "Asynchronous Job Processing", "System Design"],
+    name: "Languages",
+    skills: ["Java", "SQL", "JavaScript", "C"],
+  },
+  {
+    name: "Backend",
+    skills: ["Spring Boot", "Java EE", "REST APIs", "gRPC", "Microservices", "Service-Oriented Architecture", "Multithreading", "WebSockets", "Asynchronous Job Processing", "Enterprise Resource Planning", "Web Browsers"],
   },
   {
     name: "Databases & Data",
-    skills: ["MySQL", "MongoDB", "DynamoDB", "Redis", "Query Optimization", "Indexing"],
+    skills: ["MongoDB", "DynamoDB", "MySQL", "Redis", "NoSQL/Document Stores", "Query Optimization", "Indexing"],
   },
   {
     name: "Cloud & DevOps",
-    skills: ["AWS", "GCP", "Docker", "Kubernetes", "CI/CD", "GitHub Actions", "Jenkins", "IaC"],
+    skills: ["AWS", "GCP", "S3", "Lambda", "EventBridge", "IAM", "KMS", "CloudFormation", "Docker", "Kubernetes", "Jenkins", "GitHub Actions", "CI/CD", "IaC", "Logging & Monitoring", "Cloud Security"],
+  },
+  {
+    name: "Engineering Practices",
+    skills: ["System Design", "Design Patterns", "OOP", "Performance Optimization", "High Availability", "Security", "Agile/Scrum", "Code Reviews", "Identity Management", "Security Screening Compliance"],
   },
   {
     name: "AI & Generative AI",
-    skills: ["LLM APIs", "RAG", "Prompt Engineering", "AI Agents", "Vector Databases", "Tool Calling"],
+    skills: ["LLM APIs", "RAG", "Prompt Engineering", "Embeddings", "Vector Databases", "AI Agents", "Tool Calling", "LLM Evaluation", "LLM Observability", "AI Infrastructure", "Agentic AI"],
   },
   {
     name: "AI-Assisted Development",
-    skills: ["GitHub Copilot", "Claude Code", "Cursor", "AI Code Review"],
+    skills: ["GitHub Copilot", "Claude Code", "Codex", "Cursor", "AI Code Generation", "AI-generated Testing", "AI Code Review", "AI-assisted Debugging", "Agentic Development Workflows"],
   },
   {
     name: "Frontend Development",
-    skills: ["React", "Tailwind CSS", "JavaScript"],
+    skills: ["React", "Tailwind CSS"],
   },
 ];
 

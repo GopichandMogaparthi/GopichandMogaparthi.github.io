@@ -12,10 +12,12 @@ import java.util.List;
 @Component
 public class DataLoader implements CommandLineRunner {
 
-    private static final String BACKEND = "Backend Development";
+    private static final String LANGUAGES = "Languages";
+    private static final String BACKEND = "Backend";
     private static final String FRONTEND = "Frontend Development";
-    private static final String CLOUD = "Cloud & DevOps";
     private static final String DATA = "Databases & Data";
+    private static final String CLOUD = "Cloud & DevOps";
+    private static final String ENGINEERING = "Engineering Practices";
     private static final String AI = "AI & Generative AI";
     private static final String AI_DEV = "AI-Assisted Development";
 
@@ -29,45 +31,88 @@ public class DataLoader implements CommandLineRunner {
 
     @Override
     public void run(String... args) {
-        seedSkill("Java", BACKEND, 1);
-        seedSkill("Spring Boot", BACKEND, 2);
-        seedSkill("Microservices", BACKEND, 3);
-        seedSkill("REST APIs", BACKEND, 4);
-        seedSkill("gRPC", BACKEND, 5);
-        seedSkill("WebSockets", BACKEND, 6);
-        seedSkill("Asynchronous Job Processing", BACKEND, 7);
-        seedSkill("System Design", BACKEND, 8);
+        // One-time cleanup: "Backend Development" was renamed to "Backend" to match
+        // the resume's actual section heading. Safe to call on every boot — a no-op
+        // once the stale rows are gone.
+        skillService.deleteByCategory("Backend Development");
 
-        seedSkill("React", FRONTEND, 1);
-        seedSkill("Tailwind CSS", FRONTEND, 2);
-        seedSkill("JavaScript", FRONTEND, 3);
+        seedSkill("Java", LANGUAGES, 1);
+        seedSkill("SQL", LANGUAGES, 2);
+        seedSkill("JavaScript", LANGUAGES, 3);
+        seedSkill("C", LANGUAGES, 4);
+
+        seedSkill("Spring Boot", BACKEND, 1);
+        seedSkill("Java EE", BACKEND, 2);
+        seedSkill("REST APIs", BACKEND, 3);
+        seedSkill("gRPC", BACKEND, 4);
+        seedSkill("Microservices", BACKEND, 5);
+        seedSkill("Service-Oriented Architecture", BACKEND, 6);
+        seedSkill("Multithreading", BACKEND, 7);
+        seedSkill("WebSockets", BACKEND, 8);
+        seedSkill("Asynchronous Job Processing", BACKEND, 9);
+        seedSkill("Enterprise Resource Planning", BACKEND, 10);
+        seedSkill("Web Browsers", BACKEND, 11);
+
+        seedSkill("MongoDB", DATA, 1);
+        seedSkill("DynamoDB", DATA, 2);
+        seedSkill("MySQL", DATA, 3);
+        seedSkill("Redis", DATA, 4);
+        seedSkill("NoSQL/Document Stores", DATA, 5);
+        seedSkill("Query Optimization", DATA, 6);
+        seedSkill("Indexing", DATA, 7);
 
         seedSkill("AWS", CLOUD, 1);
         seedSkill("GCP", CLOUD, 2);
-        seedSkill("Docker", CLOUD, 3);
-        seedSkill("Kubernetes", CLOUD, 4);
-        seedSkill("CI/CD", CLOUD, 5);
-        seedSkill("GitHub Actions", CLOUD, 6);
-        seedSkill("Jenkins", CLOUD, 7);
-        seedSkill("IaC", CLOUD, 8);
+        seedSkill("S3", CLOUD, 3);
+        seedSkill("Lambda", CLOUD, 4);
+        seedSkill("EventBridge", CLOUD, 5);
+        seedSkill("IAM", CLOUD, 6);
+        seedSkill("KMS", CLOUD, 7);
+        seedSkill("CloudFormation", CLOUD, 8);
+        seedSkill("Docker", CLOUD, 9);
+        seedSkill("Kubernetes", CLOUD, 10);
+        seedSkill("Jenkins", CLOUD, 11);
+        seedSkill("GitHub Actions", CLOUD, 12);
+        seedSkill("CI/CD", CLOUD, 13);
+        seedSkill("IaC", CLOUD, 14);
+        seedSkill("Logging & Monitoring", CLOUD, 15);
+        seedSkill("Cloud Security", CLOUD, 16);
 
-        seedSkill("MySQL", DATA, 1);
-        seedSkill("MongoDB", DATA, 2);
-        seedSkill("DynamoDB", DATA, 3);
-        seedSkill("Redis", DATA, 4);
-        seedSkill("Query Optimization", DATA, 5);
+        seedSkill("System Design", ENGINEERING, 1);
+        seedSkill("Design Patterns", ENGINEERING, 2);
+        seedSkill("OOP", ENGINEERING, 3);
+        seedSkill("Performance Optimization", ENGINEERING, 4);
+        seedSkill("High Availability", ENGINEERING, 5);
+        seedSkill("Security", ENGINEERING, 6);
+        seedSkill("Agile/Scrum", ENGINEERING, 7);
+        seedSkill("Code Reviews", ENGINEERING, 8);
+        seedSkill("Identity Management", ENGINEERING, 9);
+        seedSkill("Security Screening Compliance", ENGINEERING, 10);
 
         seedSkill("LLM APIs", AI, 1);
         seedSkill("RAG", AI, 2);
         seedSkill("Prompt Engineering", AI, 3);
-        seedSkill("AI Agents", AI, 4);
+        seedSkill("Embeddings", AI, 4);
         seedSkill("Vector Databases", AI, 5);
-        seedSkill("Tool Calling", AI, 6);
+        seedSkill("AI Agents", AI, 6);
+        seedSkill("Tool Calling", AI, 7);
+        seedSkill("LLM Evaluation", AI, 8);
+        seedSkill("LLM Observability", AI, 9);
+        seedSkill("AI Infrastructure", AI, 10);
+        seedSkill("Agentic AI", AI, 11);
 
         seedSkill("GitHub Copilot", AI_DEV, 1);
         seedSkill("Claude Code", AI_DEV, 2);
-        seedSkill("Cursor", AI_DEV, 3);
-        seedSkill("AI Code Review", AI_DEV, 4);
+        seedSkill("Codex", AI_DEV, 3);
+        seedSkill("Cursor", AI_DEV, 4);
+        seedSkill("AI Code Generation", AI_DEV, 5);
+        seedSkill("AI-generated Testing", AI_DEV, 6);
+        seedSkill("AI Code Review", AI_DEV, 7);
+        seedSkill("AI-assisted Debugging", AI_DEV, 8);
+        seedSkill("Agentic Development Workflows", AI_DEV, 9);
+
+        seedSkill("React", FRONTEND, 1);
+        seedSkill("Tailwind CSS", FRONTEND, 2);
 
         seedProject(
                 "Distributed Real-Time Collaborative Whiteboard System",

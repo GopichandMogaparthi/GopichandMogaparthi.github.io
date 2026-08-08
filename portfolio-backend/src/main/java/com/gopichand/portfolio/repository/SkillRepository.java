@@ -10,4 +10,5 @@ import java.util.List;
 public interface SkillRepository extends JpaRepository<Skill, Long> {
     List<Skill> findAllByOrderByCategoryAscSortOrderAscNameAsc();
     boolean existsByNameAndCategory(String name, String category);
+    void deleteByCategory(String category);
 }

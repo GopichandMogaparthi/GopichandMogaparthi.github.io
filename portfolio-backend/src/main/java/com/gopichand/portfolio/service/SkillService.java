@@ -41,6 +41,10 @@ public class SkillService {
         return skillRepository.existsByNameAndCategory(name, category);
     }
 
+    public void deleteByCategory(String category) {
+        skillRepository.deleteByCategory(category);
+    }
+
     public Skill save(Skill skill) {
         return skillRepository.save(skill);
     }
