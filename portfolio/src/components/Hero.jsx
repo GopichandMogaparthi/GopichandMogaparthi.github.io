@@ -10,13 +10,13 @@ export default function Hero() {
           {/* Left content */}
           <div className="text-center md:text-left">
             <p className="text-sm font-medium text-gray-500 tracking-widest uppercase mb-4">
-              Java Full Stack Developer
+              Backend Software Engineer
             </p>
             <h1 className="text-5xl md:text-6xl font-black text-gray-900 leading-tight mb-6">
-              Building robust digital experiences for the enterprise
+              Building secure, distributed backend systems at scale
             </h1>
             <p className="text-lg text-gray-500 mb-10 max-w-md mx-auto md:mx-0">
-              I develop scalable, high-performance applications using Java, Spring, and modern frontend technologies.
+              I design high-availability REST APIs and event-driven workflows on AWS using Java and Spring Boot, with a focus on security and reliability.
             </p>
             <div className="flex gap-6 justify-center md:justify-start">
               <button

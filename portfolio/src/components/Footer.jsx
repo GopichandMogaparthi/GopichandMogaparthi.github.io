@@ -16,7 +16,7 @@ export default function Footer() {
           <div>
             <p className="font-bold text-gray-900 text-lg mb-3">GopichandDev</p>
             <p className="text-sm text-gray-500 leading-relaxed">
-              Java Full Stack Developer focused on building enterprise-grade applications with modern technologies and best practices.
+              Backend Software Engineer focused on secure, distributed systems using Java, Spring Boot, AWS, and GCP.
             </p>
             <div className="flex gap-3 mt-4">
               {SOCIAL_LINKS.map((s) =>
@@ -70,7 +70,7 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-gray-100 pt-6 flex flex-col md:flex-row justify-between items-center gap-2 text-xs text-gray-400">
-          <p>© 2026 Gopichand Mogaparthi Software Development Engineer. All rights reserved.</p>
+          <p>© 2026 Gopichand Mogaparthi, Software Engineer. All rights reserved.</p>
           <p>Designed & Built with precision</p>
         </div>
       </div>

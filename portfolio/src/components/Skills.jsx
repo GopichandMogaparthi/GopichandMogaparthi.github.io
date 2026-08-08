@@ -5,23 +5,35 @@ import { api } from "../services/api";
 const FALLBACK_CATEGORIES = [
   {
     name: "Backend Development",
-    skills: ["Java", "Spring Boot", "Spring MVC", "Spring Security", "Hibernate", "JPA", "RESTful APIs", "Microservices", "JUnit", "Mockito", "Maven", "Gradle"],
+    skills: ["Java", "Spring Boot", "REST APIs", "gRPC", "Microservices", "WebSockets", "Asynchronous Job Processing", "System Design"],
+  },
+  {
+    name: "Databases & Data",
+    skills: ["MySQL", "MongoDB", "DynamoDB", "Redis", "Query Optimization", "Indexing"],
+  },
+  {
+    name: "Cloud & DevOps",
+    skills: ["AWS", "GCP", "Docker", "Kubernetes", "CI/CD", "GitHub Actions", "Jenkins", "IaC"],
+  },
+  {
+    name: "AI & Generative AI",
+    skills: ["LLM APIs", "RAG", "Prompt Engineering", "AI Agents", "Vector Databases", "Tool Calling"],
+  },
+  {
+    name: "AI-Assisted Development",
+    skills: ["GitHub Copilot", "Claude Code", "Cursor", "AI Code Review"],
   },
   {
     name: "Frontend Development",
-    skills: ["JavaScript", "TypeScript", "React", "Angular", "HTML5", "CSS3", "SCSS", "Tailwind CSS", "Redux", "Material UI", "Bootstrap"],
-  },
-  {
-    name: "Database & Cloud",
-    skills: ["MySQL", "PostgreSQL", "MongoDB", "Redis", "AWS", "Azure", "Docker", "Kubernetes", "CI/CD", "Jenkins", "Git", "GitHub Actions"],
+    skills: ["React", "Tailwind CSS", "JavaScript"],
   },
 ];
 
 const PROFICIENCY = [
   { label: "Java / Spring Boot", pct: 95 },
-  { label: "React / TypeScript", pct: 85 },
-  { label: "AWS / Cloud", pct: 80 },
-  { label: "Microservices", pct: 88 },
+  { label: "AWS / GCP / Cloud", pct: 85 },
+  { label: "Distributed Systems", pct: 88 },
+  { label: "AI-Assisted Development", pct: 85 },
   { label: "SQL / NoSQL", pct: 82 },
 ];
 

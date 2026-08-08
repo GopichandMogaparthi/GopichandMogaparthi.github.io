@@ -15,6 +15,9 @@ public class DataLoader implements CommandLineRunner {
     private static final String BACKEND = "Backend Development";
     private static final String FRONTEND = "Frontend Development";
     private static final String CLOUD = "Cloud & DevOps";
+    private static final String DATA = "Databases & Data";
+    private static final String AI = "AI & Generative AI";
+    private static final String AI_DEV = "AI-Assisted Development";
 
     private final SkillService skillService;
     private final ProjectService projectService;
@@ -30,11 +33,41 @@ public class DataLoader implements CommandLineRunner {
         seedSkill("Spring Boot", BACKEND, 2);
         seedSkill("Microservices", BACKEND, 3);
         seedSkill("REST APIs", BACKEND, 4);
+        seedSkill("gRPC", BACKEND, 5);
+        seedSkill("WebSockets", BACKEND, 6);
+        seedSkill("Asynchronous Job Processing", BACKEND, 7);
+        seedSkill("System Design", BACKEND, 8);
+
         seedSkill("React", FRONTEND, 1);
         seedSkill("Tailwind CSS", FRONTEND, 2);
+        seedSkill("JavaScript", FRONTEND, 3);
+
         seedSkill("AWS", CLOUD, 1);
-        seedSkill("Docker", CLOUD, 2);
-        seedSkill("Kubernetes", CLOUD, 3);
+        seedSkill("GCP", CLOUD, 2);
+        seedSkill("Docker", CLOUD, 3);
+        seedSkill("Kubernetes", CLOUD, 4);
+        seedSkill("CI/CD", CLOUD, 5);
+        seedSkill("GitHub Actions", CLOUD, 6);
+        seedSkill("Jenkins", CLOUD, 7);
+        seedSkill("IaC", CLOUD, 8);
+
+        seedSkill("MySQL", DATA, 1);
+        seedSkill("MongoDB", DATA, 2);
+        seedSkill("DynamoDB", DATA, 3);
+        seedSkill("Redis", DATA, 4);
+        seedSkill("Query Optimization", DATA, 5);
+
+        seedSkill("LLM APIs", AI, 1);
+        seedSkill("RAG", AI, 2);
+        seedSkill("Prompt Engineering", AI, 3);
+        seedSkill("AI Agents", AI, 4);
+        seedSkill("Vector Databases", AI, 5);
+        seedSkill("Tool Calling", AI, 6);
+
+        seedSkill("GitHub Copilot", AI_DEV, 1);
+        seedSkill("Claude Code", AI_DEV, 2);
+        seedSkill("Cursor", AI_DEV, 3);
+        seedSkill("AI Code Review", AI_DEV, 4);
 
         seedProject(
                 "Distributed Real-Time Collaborative Whiteboard System",

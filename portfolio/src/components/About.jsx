@@ -5,10 +5,10 @@ export default function About() {
         <div className="text-center mb-16">
           <p className="text-xs font-semibold tracking-widest uppercase text-gray-400 mb-3">About Me</p>
           <h2 className="text-4xl md:text-5xl font-black text-gray-900 mb-4">
-            Passionate Java Developer with AI Solution Architect
+            Software Engineer II building secure, distributed systems
           </h2>
           <p className="text-gray-500 max-w-2xl mx-auto">
-            Dedicated to creating efficient, scalable, and maintainable software solutions for enterprise needs.
+            Focused on high-availability REST APIs, event-driven workflows, and production-quality backend systems on AWS.
           </p>
         </div>
 
@@ -28,18 +28,18 @@ export default function About() {
             <div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">My Journey</h3>
               <p className="text-gray-500 leading-relaxed text-center">
-                With over 3 years of experience in Java development, I've built and maintained various enterprise
-                applications that serve thousands of users daily. My technical journey began with a Computer Science
-                degree and has evolved through continuous learning and adaptation to emerging technologies.
+                With 3+ years of experience building distributed backend services in Java and Spring Boot, I design
+                high-availability REST APIs and event-driven workflows on AWS. My work spans identity management,
+                security, and reliability practices that keep production systems resilient at scale.
               </p>
             </div>
 
             <div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">My Approach</h3>
               <p className="text-gray-500 leading-relaxed text-center">
-                I believe in writing clean, maintainable code that follows best practices and design patterns. My
-                development philosophy centers around creating resilient systems that can scale and adapt to changing
-                business requirements.
+                I believe in writing clean, maintainable code that follows best practices and design patterns, with
+                security and reliability built in from the start. My development philosophy centers around creating
+                resilient systems that can scale and adapt to changing business requirements.
               </p>
             </div>
 
@@ -48,9 +48,9 @@ export default function About() {
                 <h4 className="font-bold text-gray-800 mb-2">Education</h4>
                 <p className="text-sm text-gray-500 leading-relaxed">
                   M.S. in Information Technology and Management<br />
-                  Webster University<br /><br />
+                  Webster University · GPA 3.78<br /><br />
                   B.Tech in Computer Science and Engineering with Artificial Intelligence<br />
-                  K L University
+                  K L University · GPA 8.07
                 </p>
               </div>
               <div>
