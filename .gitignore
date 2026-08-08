@@ -1,0 +1,17 @@
+# OS
+.DS_Store
+**/.DS_Store
+
+# IDE
+.vscode/
+
+# Frontend (Create React App)
+portfolio/node_modules/
+portfolio/build/
+portfolio/npm-debug.log*
+
+# Backend (Maven)
+portfolio-backend/target/
+
+# Local-only secrets
+portfolio-backend/run-local.sh
