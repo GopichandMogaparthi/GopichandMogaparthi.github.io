@@ -5,6 +5,7 @@ import com.gopichand.portfolio.dto.Dtos.SkillResponse;
 import com.gopichand.portfolio.model.Skill;
 import com.gopichand.portfolio.repository.SkillRepository;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
@@ -41,6 +42,7 @@ public class SkillService {
         return skillRepository.existsByNameAndCategory(name, category);
     }
 
+    @Transactional
     public void deleteByCategory(String category) {
         skillRepository.deleteByCategory(category);
     }
