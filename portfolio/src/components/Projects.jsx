@@ -47,6 +47,15 @@ const FALLBACK_PROJECTS = [
     githubUrl: "#",
     liveUrl: "#",
   },
+  {
+    id: 6,
+    title: "Distributed E-Commerce Platform",
+    description: "Architected a distributed e-commerce platform using Spring Boot microservices for catalog, inventory, orders, payments, and user management, enabling independent deployment and horizontal scaling. Implemented Kafka-based event-driven workflows for asynchronous order and inventory processing, Redis caching that improved API response latency by ~40%, and 30+ REST APIs secured with Spring Security and role-based access control. Deployed containerized services on Kubernetes with health checks, rolling deployments, and horizontal pod autoscaling, backed by GitHub Actions CI/CD pipelines and AWS (EC2, RDS, S3, CloudWatch).",
+    tags: ["Java", "Spring Boot", "Microservices", "Kafka", "Redis", "PostgreSQL", "Docker", "Kubernetes", "AWS"],
+    imageUrl: null,
+    githubUrl: "#",
+    liveUrl: "#",
+  },
 ];
 
 function ProjectCard({ project }) {

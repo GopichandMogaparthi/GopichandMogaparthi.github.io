@@ -133,6 +133,19 @@ public class DataLoader implements CommandLineRunner {
                 List.of("REST APIs", "Google Gemini", "n8n", "LLM Automation"),
                 2
         );
+        seedProject(
+                "Distributed E-Commerce Platform",
+                "Architected a distributed e-commerce platform using Spring Boot microservices for catalog, "
+                        + "inventory, orders, payments, and user management, enabling independent deployment and "
+                        + "horizontal scaling. Implemented Kafka-based event-driven workflows for asynchronous "
+                        + "order and inventory processing, Redis caching that improved API response latency by "
+                        + "~40%, and 30+ REST APIs secured with Spring Security and role-based access control. "
+                        + "Deployed containerized services on Kubernetes with health checks, rolling deployments, "
+                        + "and horizontal pod autoscaling, backed by GitHub Actions CI/CD pipelines and AWS "
+                        + "(EC2, RDS, S3, CloudWatch).",
+                List.of("Java", "Spring Boot", "Microservices", "Kafka", "Redis", "PostgreSQL", "Docker", "Kubernetes", "AWS"),
+                3
+        );
     }
 
     private void seedSkill(String name, String category, int sortOrder) {
